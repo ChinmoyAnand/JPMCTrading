@@ -46,40 +46,22 @@ public class TradeFacade {
         
         List<TradeDetails> tradeDetailsList = new ArrayList<>();
         
-        TradeDetails tradeDetails = new TradeDetails("foo", "B", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 2)
-                                                     ,  200, 100.25);
-
-        TradeDetails tradeDetails1 = new TradeDetails("foo", "S", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 2)
-                                                      , 200, 100.25);
-        TradeDetails tradeDetails2 = new TradeDetails("bar", "B", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 2)
-                                                      , 200, 100.25);
-        TradeDetails tradeDetails3 = new TradeDetails("bar", "B", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 3)
-                                                      , 200, 100.25);
-        TradeDetails tradeDetails4 = new TradeDetails("bar", "B", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 5)
-                                                      , 200, 100.25);
-        TradeDetails tradeDetails5 = new TradeDetails("john", "B", 0.5, "AED", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 1)
-                                                      , 200, 100.25);
-        TradeDetails tradeDetails6 = new TradeDetails("john", "B", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 5)
-                                                      , 200, 100.25);
-        TradeDetails tradeDetails7 = new TradeDetails("bar", "B", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 5)
-                                                      , 200, 100.25);
-        TradeDetails tradeDetails8 = new TradeDetails("foo", "S", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 5)
-                                                      , 200, 100.25);
-        TradeDetails tradeDetails9 = new TradeDetails("bar", "B", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 5)
-                                                      , 200, 100.25);
-        TradeDetails tradeDetails10 = new TradeDetails("john", "S", 0.5, "SAR", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 2)
-                                                      , 200, 100.25);
-        tradeDetailsList.add(tradeDetails);
-        tradeDetailsList.add(tradeDetails1);
-        tradeDetailsList.add(tradeDetails2);
-        tradeDetailsList.add(tradeDetails3);
-        tradeDetailsList.add(tradeDetails4);//
-        tradeDetailsList.add(tradeDetails5);
-        tradeDetailsList.add(tradeDetails6);
-        tradeDetailsList.add(tradeDetails7);
-        tradeDetailsList.add(tradeDetails8);
-        tradeDetailsList.add(tradeDetails9);
-        tradeDetailsList.add(tradeDetails10);
+        tradeDetailsList.add(new TradeDetails("foo", "B", 0.5, "AED", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 2), 200, 100.25));
+        tradeDetailsList.add(new TradeDetails("foo", "B", 0.5, "INR", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 2), 200, 100.25));
+        tradeDetailsList.add(new TradeDetails("bar", "B", 0.5, "SAR", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 3), 200, 100.25));
+        tradeDetailsList.add(new TradeDetails("bar", "B", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 3), 200, 100.25));
+        tradeDetailsList.add(new TradeDetails("bar", "B", 0.5, "INR", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 5), 200, 100.25));
+        tradeDetailsList.add(new TradeDetails("john", "B", 0.5, "AED", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 1), 200,100.25));
+        tradeDetailsList.add(new TradeDetails("john", "B", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 3), 200,100.25));
+        tradeDetailsList.add(new TradeDetails("john", "B", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 4), 200,100.25));
+        
+        tradeDetailsList.add(new TradeDetails("foo", "S", 0.5, "AED", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 2), 200,100.25));
+        tradeDetailsList.add(new TradeDetails("foo", "S", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 5), 200, 100.25));
+        tradeDetailsList.add(new TradeDetails("bar", "S", 0.5, "INR", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 2), 200,100.25));
+        tradeDetailsList.add(new TradeDetails("bar", "S", 0.5, "SAR", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 3), 200,100.25));
+        tradeDetailsList.add(new TradeDetails("john", "S", 0.5, "INR", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 2), 200,100.25));
+        tradeDetailsList.add(new TradeDetails("john", "S", 0.5, "SGP", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 5), 200,100.25));
+        tradeDetailsList.add(new TradeDetails("john", "S", 0.5, "SAR", LocalDate.of(2016, Month.JANUARY, 1), LocalDate.of(2016, Month.JANUARY, 1), 200,100.25));
         
         return tradeDetailsList;
         
